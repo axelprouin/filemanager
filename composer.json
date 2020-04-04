@@ -7,6 +7,8 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-mbstring": "^7.4",
+        "ext-zip": "^1.15",
         "lsolesen/pel": "^0.9.8",
         "sensio/framework-extra-bundle": "^5.5",
         "symfony/console": "*",
@@ -17,8 +19,7 @@
         "symfony/twig-bundle": "5.0.*",
         "symfony/var-dumper": "5.0.*",
         "symfony/yaml": "*",
-        "twig/twig": "^3.0",
-        "ext-zip": "*"
+        "twig/twig": "^3.0"
     },
     "require-dev": {
     },

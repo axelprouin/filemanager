@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./app:/app
+      - .:/app
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
 
   php:
@@ -14,11 +14,11 @@ services:
       context: docker/php
     container_name: php
     volumes:
-      - ./app:/app
+      - .:/app
 
   composer:
     image: composer:1.10
     container_name: composer
     volumes:
-      - ./app:/app
+      - .:/app
     command: bash -c "composer install && tail -f /dev/null"
