@@ -32,6 +32,7 @@ final class ZipHandler
     {
         $this->zipArchive->open($file);
         $this->zipArchive->extractTo(sprintf('%s', $folder));
+        unlink($file);
     }
 
     /**
@@ -74,7 +75,7 @@ final class ZipHandler
      */
     private function deleteDir(string $dirPath)
     {
-        if (! is_dir($dirPath)) {
+        if (!is_dir($dirPath)) {
             throw new \InvalidArgumentException("$dirPath must be a directory");
         }
 

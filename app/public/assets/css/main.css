@@ -1,0 +1,60 @@
+html, body, .row {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
+}
+.col-2 {
+    padding: 0!important;
+}
+
+/* Menu */
+.menu {
+    background-color: #B41334;
+    min-height: 100%;
+}
+.logo {
+    width: 90px;
+}
+.nav-item {
+    padding: 15px;
+}
+.nav-item span {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.nav-item:hover {
+    background-color: #8e142a;
+}
+.picto {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.help {
+    font-size: 14px;
+    font-style: italic;
+}
+.button-red {
+    cursor: pointer;
+    background-color: #B41334;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
+.button-red:hover {
+    background-color: #8e142a;
+}
+
+/* Content */
+.content {
+    padding-top: 15px;
+}
+
+/* Meta */
+.input-file {
+   display: none;
+}
+.form-container {
+    display: flex;
+}

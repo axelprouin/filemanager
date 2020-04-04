@@ -4,10 +4,18 @@
     Meta management
 {% endblock %}
 
+{% block content %}
+    <h1>Gestion des mots-clés</h1>
 
-{% block body %}
-    <form method="POST" enctype="multipart/form-data">
-        <input name="file" type="file">
-        <input type="submit">
+    <form class="md-form" method="POST" enctype="multipart/form-data">
+        <label for="file" class="button-red">
+            <i class="fas fa-upload"></i>
+            Fichier à importer
+        </label>
+        <span class="help">
+            Le fichier doit etre au format zip et contenir que des images
+        </span>
+        <input id="file" name="file" class="input-file" type="file"><br>
+        <input class="button-red" type="submit">
     </form>
 {% endblock %}
